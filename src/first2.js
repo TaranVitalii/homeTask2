@@ -1,5 +1,5 @@
 'use strict';
-window.randomArray = function (){
+function randomArray(){
 	let arr=[];
 
 	while (arr.length <50) {
@@ -12,4 +12,5 @@ window.randomArray = function (){
 	arr.sort((a,b)=> a-b )
 	return arr;
 	}
+window.randomArray=randomArray;
 export{randomArray};

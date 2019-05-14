@@ -122,9 +122,8 @@ for (; res4 <= res3 ;res4++){
 }
 return arr;
 
-}
-window.yearsArr=yearsArr();
-
+};
+window.yearsArr=yearsArr;
 
 
 
@@ -154,6 +153,7 @@ function randomArray(){
 	arr.sort((a,b)=> a-b )
 	return arr;
 	}
+window.randomArray=randomArray;
 
 
 /***/ }),
@@ -199,7 +199,7 @@ let oddValue = Math.max(...oddArr);
 let evenOddValue = [evenValue,oddValue ];
 return evenOddValue;
 }
-
+window.evenOddValue=evenOddValue;
 
 
 /***/ }),
@@ -241,6 +241,7 @@ let newObject= users.reduce((acc, item, index) => {
 }, {});
 return  newObject;
 }
+window.newObject=newObject;
 
 
 
@@ -263,7 +264,7 @@ function isEmpty(obj) {
 	}
 	return true;
 }
-
+window.isEmpty=isEmpty;
 
 
 
@@ -286,6 +287,7 @@ function factorial(n) {
 	return n * factorial(n-1);
  }
 }
+window.factorial=factorial;
 
 
 /***/ }),
@@ -313,34 +315,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const button1 = document.querySelector('first');
-const button2 = document.querySelector('second');
-const button3 = document.querySelector('three');
-const button4 = document.querySelector('four');
-const button5 = document.querySelector('five');
-const button6 = document.querySelector('six');
+// const button1 = document.getElementById('first');
+// const button2 = document.getElementById('second');
+// const button3 = document.getElementById('three');
+// const button4 = document.getElementById('four');
+// const button5 = document.getElementById('five');
+// const button6 = document.getElementById('six');
 
 
 
-button1.onclick = () => {
-	console.log(_first1__WEBPACK_IMPORTED_MODULE_0__["yearsArr"])
+// button1.onclick = () => {
+// 	alert(yearsArr());
 
-};
-button2.onclick = () => {
+// };
+// button2.onclick = () => {
+// 	alert(randomArray());
 
-};
-button3.onclick = () => {
-
-};
-button4.onclick = () => {
-
-};
-button5.onclick = () => {
-
-};
-button6.onclick = () => {
-
-};
+// };
+// button3.onclick = () => {
+// alert(evenOddValue());
+// };
+// button4.onclick = () => {
+// alert(newObject());
+// };
+// button5.onclick = () => {
+// alert(isEmpty());
+// };
+// button6.onclick = () => {
+// alert(factorial());
+// };
 
 /***/ })
 

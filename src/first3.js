@@ -1,5 +1,5 @@
 'use strict';
-window.evenOddValue = function (){ 
+function evenOddValue(){ 
 	let arr=[];
 
 	while (arr.length <50) {
@@ -29,5 +29,5 @@ let oddValue = Math.max(...oddArr);
 let evenOddValue = [evenValue,oddValue ];
 return evenOddValue;
 }
-
+window.evenOddValue=evenOddValue;
 export {evenOddValue};

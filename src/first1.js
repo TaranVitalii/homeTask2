@@ -1,7 +1,7 @@
 'usestrict';
 
 
-window.yearsArr = function(){ 
+function yearsArr(){ 
 let res1 = prompt('enter first year',2019);
 let res2 = prompt('enter second year',2019);
 
@@ -24,6 +24,6 @@ for (; res4 <= res3 ;res4++){
 }
 return arr;
 
-}
-
+};
+window.yearsArr=yearsArr;
 export{yearsArr};
