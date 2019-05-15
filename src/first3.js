@@ -1,5 +1,5 @@
-'use strict';
-function evenOddValue(){ 
+
+export function evenOddValue(){ 
 	let arr=[];
 
 	while (arr.length <50) {
@@ -22,7 +22,6 @@ const oddArr = [];
 			oddArr.push(elementArray)
 		} else {evenArr.push(elementArray)}
 	}
-arr.sort((a,b)=> a-b )
 
 let evenValue = Math.max(...evenArr);
 let oddValue = Math.max(...oddArr);
@@ -30,4 +29,3 @@ let evenOddValue = [evenValue,oddValue ];
 return evenOddValue;
 }
 window.evenOddValue=evenOddValue;
-export {evenOddValue};

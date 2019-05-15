@@ -1,4 +1,4 @@
-function newObject() { 
+export function newObject() { 
 let users = [
   {
     id: 1,
@@ -20,11 +20,12 @@ let users = [
 
 
 let newObject= users.reduce((acc, item, index) => {
+    index = users[index].id
     acc[index]=item.name;
     return acc;
 }, {});
-return  newObject;
+return newObject;
 }
 window.newObject=newObject;
-export{newObject};
+
 

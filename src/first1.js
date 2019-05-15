@@ -1,29 +1,31 @@
-'usestrict';
 
 
-function yearsArr(){ 
-let res1 = prompt('enter first year',2019);
-let res2 = prompt('enter second year',2019);
+export function yearsArr(){ 
+let startYear = prompt('enter first year',2019);
+let lastYear = prompt('enter second year',2019);
 
 
-if (isNaN(res1)){
-	res1 = 2019;
-}else if(isNaN(res2)){
-	res2=2019;
-} else if(res1>res2){
-	res1=2019;
-	res2=2019;
-}
-let res3 = Math.floor(res2/4);
-let res4 = Math.ceil(res1/4);
+if(isNaN(startYear)){
+	startYear = 2019;
+} ;
+if(isNaN(lastYear)){
+	lastYear=2019;
+};
+if(startYear>lastYear){
+	startYear=2019;
+	lastYear=2019;
+};
+
+let divisionStartYear = Math.ceil(startYear/4);
+let divisionLastYear = Math.floor(lastYear/4);
 let arr=[];
 
-for (; res4 <= res3 ;res4++){
-	let newRes1 = res4*4;
-	arr.push(newRes1);
+for (; divisionStartYear <= divisionLastYear ;divisionStartYear++){
+	let leapYear = divisionStartYear*4;
+	arr.push(leapYear);
 }
 return arr;
-
 };
+
 window.yearsArr=yearsArr;
-export{yearsArr};
+
